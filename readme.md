@@ -12,5 +12,6 @@ its janky and I don't care
 
 ## todo
 + [ ] figure out profile scraping?
++ [ ] skip over already downloaded content
 
 this is most likely against TOS use at your own risk

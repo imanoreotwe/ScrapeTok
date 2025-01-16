@@ -83,9 +83,9 @@ def scrape_collection(collection_id, directory):
             video_metadata = {
                 'author_username': item['author']['uniqueId'],
                 'author_id': item['author']['id'],
-                'description': item['desc'],
-                'music_title': item['music']['title'],
-                'music_author': item['music']['authorName'],
+                'description': item['desc'] if 'desc' in item else '',
+                'music_title': item['music']['title'] if 'title' in item['music'] else '',
+                'music_author': item['music']['authorName'] if 'authorName' in item['music'] else '',
                 'item_id': item['id'],
                 'comments': get_comments(item['id']) if 'comments' in item['id'] else []
             }

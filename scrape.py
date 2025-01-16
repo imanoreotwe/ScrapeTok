@@ -87,7 +87,7 @@ def scrape_collection(collection_id, directory):
                 'music_title': item['music']['title'],
                 'music_author': item['music']['authorName'],
                 'item_id': item['id'],
-                'comments': get_comments(item['id'])
+                'comments': get_comments(item['id']) if 'comments' in item['id'] else []
             }
 
             #print('collecting {}'.format(video_metadata['item_id']))

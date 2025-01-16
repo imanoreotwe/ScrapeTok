@@ -133,5 +133,5 @@ def scrape_collection(collection_id, directory):
 
     print('{} done!'.format(count))
 
-scrape_collection('7111887189571160875', './scrapetok/funnies/')
-#scrape_collection('7111887189571160875', './scrapetok/funnies/')
+# Usage:
+# scrape_collection('<collection_id>', '<directory>')

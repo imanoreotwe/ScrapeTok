@@ -127,7 +127,7 @@ def scrape_collection(collection_id, directory):
 
             count += 1
             print(count)
-        if r.json()['hasMore'] == "false":
+        if r.json()['hasMore'] == False:
             break
         cursor += max_count
 

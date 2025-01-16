@@ -37,7 +37,7 @@ def build_comment(comment):
     return {
         'text': comment['text'],
         'unique_id': comment['user']['unique_id'] if 'unique_id' in comment['user'] else '',
-        'nickname': comment['user']['nickname'],
+        'nickname': comment['user']['nickname'] if 'nickname' in comment['user'] else '',
         'cid': comment['cid'],
         'reply_comment_total': comment['reply_comment_total'] if 'reply_comment_total' in comment else 0,
         'reply_id': comment['reply_id'],

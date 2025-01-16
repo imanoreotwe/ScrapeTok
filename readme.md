@@ -2,6 +2,9 @@
 
 Simple tool to scrape tiktok collections & comments
 
+videos, audios, and images are scraped into their respective formats in the given directory.
+post metadata is stored in a json including information about the creator and the comments.
+
 its janky and I don't care
 
 ## how to use
